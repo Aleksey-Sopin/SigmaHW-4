@@ -1,0 +1,138 @@
+.about-us { 
+    width: 100%;
+    margin-top: 26rem;
+    margin-bottom: 12.3rem;
+    background: $whiteColor;
+    &__container {
+        max-width: $maxWidthContainer;
+        margin: 0 auto;
+        padding: 0 0.3rem;
+        display: flex;
+        flex-direction: column;  
+        gap: 11rem;      
+     }
+    &__first-block {
+        position: relative;
+        display: flex;
+        gap: 7.22rem;
+     }
+    &__first-block-big-pic img{ 
+        max-width: 710px;
+        max-height: 740px;
+    }
+    // &__first-block-content { }
+    &__first-block-subtitle {
+        padding-bottom: 3.3rem;
+        color: $mainColorText;
+        font-family: Poppins, $mainFontFamily;
+        font-size: 1.11111rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.66667rem;
+    }
+    &__first-block-title { 
+        padding-bottom: 1rem;
+        color: $secondColorTitle;
+        font-family: Poppins, $mainFontFamily;
+        font-size: 2.66667rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.16667rem;
+    }
+    &__first-block-text {
+        padding-bottom: 2rem;
+        color: $mainColorText;
+        font-family: $mainFontFamily;
+        font-size: $mainFontSize;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.66667rem; 
+    }
+    &__first-block-button { 
+        width: 8.28rem;
+        height: 2.63rem;
+        text-align: center;
+        padding: 0.5rem 0;
+        color: $buttonTextColor;
+        font-family: $mainFontFamily;
+        font-size: $mainFontSize;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1rem;
+        border-radius: 1.11rem 0rem;
+        border: 5px solid $buttonColorBackground;
+        background: $buttonColorBackground;
+        &:hover{
+            font-size: 1rem;
+            color: $buttonColorBackground;
+            background: $whiteColor;
+            transition: all ease 0.3s;
+        }
+    }
+    &__second-block {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 7.22rem;
+    }
+    // &__second-block-content { }
+    &__second-block-subtitle {
+        font-family: $mainFontFamily;
+        font-size: 16rem;
+        font-style: normal;
+        font-weight: 700;
+        background-color: $whiteColor;
+        color: transparent;
+        background-image: url('/src/images/blog/left-img.png');
+        background-size: 200%;
+        background-position: 20% 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        }
+    &__second-block-title { 
+        padding-bottom: 2rem;
+        color: $secondColorTitle;
+        font-family: Poppins, $mainFontFamily;
+        font-size: 2.77778rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.61111rem;
+        letter-spacing: 0.11111rem;
+    }
+    &__second-block-button { 
+        width: 8.28rem;
+        height: 2.63rem;
+        text-align: center;
+        padding: 0.5rem 0;
+        color: $buttonTextColor;
+        font-family: $mainFontFamily;
+        font-size: $mainFontSize;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1rem;
+        border-radius: 1.11rem 0rem;
+        border: 5px solid $buttonColorBackground;
+        background: $buttonColorBackground;
+        &:hover{
+            font-size: 1rem;
+            color: #37806B;
+            background: $whiteColor;
+            transition: all ease 0.3s;
+        }
+    }
+    &__second-block-big-pic img{
+        max-width: 710px;
+        max-height: 740px;
+    }
+}
+#about-dot-area-1{
+    position: absolute;
+    top: 105%;
+    left: 0;
+}
+#about-dot-area-2{
+    position: absolute;
+    top: 48%;
+    right: -15%;
+}

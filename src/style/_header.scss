@@ -1,0 +1,94 @@
+.header { 
+    width: 100%;
+    height: 11.1rem;
+    background: $whiteColor;
+    position: sticky;
+    z-index: 98;
+    top: 0;
+    &__container { 
+        position: relative;
+        background: $whiteColor;
+        padding: 0 0.3rem;
+        max-width: $maxWidthContainer;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__logo {
+        width: 150px;
+        height: 45px;
+     }
+}
+.nav-block { 
+    padding-left: 21rem;
+    &__item-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:2.5rem
+        }
+    &__link { 
+        color: $secondColorTitle;
+        font-family: $mainFontFamily;
+        font-size: 0.88889rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #212121;
+        &:hover{
+            color: #37806B;
+            padding: 0.3rem 1rem;
+            border-radius: 1.11111rem;
+            border: 5px solid $buttonColorBackground;
+            transition: all ease 0.3s;
+        }
+    }
+    &__sing-up { 
+        cursor: pointer;
+        margin-left: 3.55rem;
+        color: $buttonTextColor;
+        font-family: $mainFontFamily;
+        font-size: 0.88889rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $whiteColor;
+        border-radius: 0.83333rem 0rem;
+        background: #CAA892;
+        padding: 0.27rem 1.05rem; 
+        &:hover{
+            background-color: $whiteColor;
+            color: $buttonColorBackground;
+            border: 5px solid $buttonColorBackground;
+            transition: all ease 0.3s;
+        }
+    }
+}
+.progress {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    border-radius: 0.2rem;
+    width: 45%;
+    height: 0.1rem;
+}
+.progress::-webkit-progress-bar {
+    background-color: rgb(231, 255, 154);
+    border-radius: 0.2rem;
+}
+.progress::-webkit-progress-value {
+    background-color: #37806B;
+    border-radius: 0.2rem;
+    transition: all ease 1s;
+}
+.progress::-moz-progress-bar {
+    background-color: #37806B;
+    border-radius: 0.2rem;
+}
+.progress {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+   }
